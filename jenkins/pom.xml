@@ -29,6 +29,7 @@
                     <argLine>
                         -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
                     </argLine>
+                    <workingDirectory>target/</workingDirectory>
                 </configuration>
                 <dependencies>
                     <dependency>
@@ -37,6 +38,7 @@
                         <version>${aspectj.version}</version>
                     </dependency>
                 </dependencies>
+
             </plugin>
         </plugins>
     </build>
